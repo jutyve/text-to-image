@@ -1,0 +1,26 @@
+<html>
+<body>
+
+    <h1>Text to Image</h1>
+
+    <p>Enter some text and an image will be generated!</p>
+    <p>note: you need to click the button 2 to 3 time for it to work</p>
+
+    <form>
+        <input type="text" id="text">
+        <input type="button" value="Generate" onclick="generate()">
+    </form>
+
+    <p><img id="image"></p>
+
+    <script>
+function generate() {
+  var text = document.getElementById('text').value;
+  var image = document.getElementById('image');
+
+  image.src = "https://dummyimage.com/600x400/000/fff&text=" + text;
+}
+    </script>
+
+</body>
+</html>
